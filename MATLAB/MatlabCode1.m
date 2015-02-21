@@ -1,7 +1,7 @@
-% EExxxx Project 1
-% MATLAB code for xxxxxxxxxxxxx
-% Your Name and Last Name
-% Date
+% E3370 Project 1
+% MATLAB code for Project1
+% Taurino Tostado
+% 2.21.15
 
 clc      % Clear screen 
 clear    % Clear all variables
@@ -16,3 +16,7 @@ u_t=heaviside(t);
 plot(t,u_t, 'linewidth',2);grid on
 subplot(3,1,3)
 plot(t,x_t.*u_t, 'linewidth',2);grid on
+f_t=cos(omega*t)*sin(omega*t)*u(t-1);
+subplot(3,1,3)
+plot(t,x_t.*u_t, 'linewidth',2);grid on
+
